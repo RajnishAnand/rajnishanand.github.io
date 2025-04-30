@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Rajnish Anand</title>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    Under development!
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                </div>
+                <div class="terminal-title">user@system:~</div>
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="profile-image.png" alt="Profile Image">
+                </div>
+                <div class="terminal-prompt">
+                    <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">whoami</span>
+                </div>
+                <div class="terminal-output">
+                    <p>Security Researcher & Developer</p>
+                    <p>Specializing in network security, penetration testing, and secure application development.</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="skills">
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">cat skills.txt</span>
+            </div>
+            <div class="section-content">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Network Security</li>
+                    <li>Penetration Testing</li>
+                    <li>Linux Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">ls -la projects/</span>
+            </div>
+            <div class="section-content">
+                <h2>PROJECTS</h2>
+                <div class="project">
+                    <h3>PacketSniffer-X</h3>
+                    <p>A Python-based network packet sniffer with real-time filtering.</p>
+                    <div class="project-links">
+                        <a href="#" class="link">GitHub</a>
+                        <a href="#" class="link">Demo</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>SecureVault</h3>
+                    <p>End-to-end encrypted password manager with zero-knowledge architecture.</p>
+                    <div class="project-links">
+                        <a href="#" class="link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>KernelGuard</h3>
+                    <p>Linux kernel module for advanced threat detection and prevention.</p>
+                    <div class="project-links">
+                        <a href="#" class="link">GitHub</a>
+                        <a href="#" class="link">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">cat certifications.txt</span>
+            </div>
+            <div class="section-content">
+                <h2>CERTIFICATIONS</h2>
+                <ul>
+                    <li>TryHackMe: Pre Security</li>
+                    <li>Offensive Security: PEN-103</li>
+                    <li>CompTIA Security+</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">cat contact.txt</span>
+            </div>
+            <div class="section-content">
+                <h2>CONTACT</h2>
+                <div class="contact-links">
+                    <a href="#" class="link">GitHub</a>
+                    <a href="#" class="link">Email</a>
+                    <a href="#" class="link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="terminal-prompt">
+                <span class="prompt-user">user@system</span>:<span class="prompt-location">~</span>$ <span class="typing-text">exit</span>
+            </div>
+            <p class="footer-text">© 2024 | Built with HTML, CSS & JS</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
