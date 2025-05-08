@@ -1,10 +1,19 @@
 <script lang="ts">
-import Navbar from './lib/layout/Navbar.svelte';
+  import Topwave from './components/Topwave.svelte';
+  import Navbar from './lib/layout/Navbar.svelte';
+  import Profile from './lib/layout/Profile.svelte';
 </script>
 
 
 
-<header>
-  <Navbar/>
-</header>
+<div class="container">
+
+  <header>
+    <Topwave />
+    <Navbar/>
+    <Profile/>
+  </header>
+
+
+</div>
 
