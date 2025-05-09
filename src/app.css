@@ -23,3 +23,15 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+.material-symbols-outlined {
+    user-select: none;
+    color: var(--text-secondary);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+
