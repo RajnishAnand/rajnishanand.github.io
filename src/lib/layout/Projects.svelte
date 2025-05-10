@@ -9,9 +9,22 @@
     {
       title: 'Mobile Paint Webapp',
       description: 'A paint web app for mobile devices.',
-      stack: ['HTML', 'CSS', 'JS', 'JQuery'],
-      github: 'https://github.com/rajnishanand/glitchi',
+      stack: ['HTML/CSS', 'JS', 'JQuery'],
+      github: 'https://github.com/rajnishanand/paint',
       live: 'https://rajnishanand.github.io/paint/',
+    },
+    {
+      title: 'Quick Chat',
+      description: 'Scocial Chatting web based platform.\n(under-development)',
+      stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
+      // github: 'https://github.com/rajnishanand/quick-chat',
+    },
+    {
+      title: 'Archive: MiniProjects',
+      description: 'A collection of old-mini web based projects, designed for mobiles.',
+      stack: ['HTML/CSS', 'JS'],
+      // github: ''
+      live: "https://rajnishanand.github.io/miniprojects/",
     }
   ];
 </script>
@@ -50,7 +63,7 @@
     padding: 2rem;
     background-color: var(--bg-color);
     color: var(--text-primary);
-    max-width: 900px;
+    max-width: min-max(100%, 900px);
     margin: 0 auto;
   }
   
@@ -78,18 +91,22 @@
   }
   
   .project-card h3 {
+    font-weight: 400;
     margin-bottom: 0.5rem;
     color: var(--accent-color);
   }
   
   .tags {
     margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
   }
   
   .tag {
+    display: inline-block;
     background-color: var(--border-color);
     padding: 0.2rem 0.6rem;
-    margin-right: 0.4rem;
     font-size: 0.85rem;
     border-radius: 4px;
     color: var(--text-secondary);
@@ -104,4 +121,5 @@
     font-size: 0.9rem;
     color: var(--accent-color);
   }
+  
 </style>
