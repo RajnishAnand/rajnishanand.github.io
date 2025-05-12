@@ -1,6 +1,4 @@
 <script>
-  const base = import.meta.env.BASE_URL;
-
   let showMenu = false;
   function toggleMenu() {
     // alert("working");
@@ -9,16 +7,14 @@
 </script>
 
 <nav class="navbar">
-  <img src="{base}/icon.svg" alt="icon" />
+  <img src="/icon.svg" alt="icon" />
   <span class="navbar-gap"></span>
   <button class="navbar-menu-icon material-symbols-outlined" on:click={toggleMenu}> segment </button>
   <div class="menu" class:menu-visible={showMenu} >
     <button class="navbar-menu-icon-close material-symbols-outlined" on:click={toggleMenu}> close </button>
-    <a href="#skills">#skills</a>
     <a href="#projects">#projects</a>
-    <a href="#certifications">#certifications</a>
     <a href="#contact">#contact</a>
-    <a href="https://github.com/rajnishanand/rajnishanand.github.io">🡕GitHub</a>
+    <a href="https://github.com/rajnishanand/rajnishanand.github.io">↗GitHub</a>
   </div>
 </nav>
 

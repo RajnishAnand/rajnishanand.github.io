@@ -1,5 +1,5 @@
 <script>
-  const base = import.meta.env.BASE_URL;
+  // const base = import.meta.env.BASE_URL;
 </script>
 
 
@@ -84,7 +84,7 @@
 <div class="profile">
   <div class="profile-image">
     <img
-      src="{base}/images/noir.png" 
+      src="/images/noir.png" 
       alt="Rajnish Anand - Web Systems Developer"
     />
   </div>

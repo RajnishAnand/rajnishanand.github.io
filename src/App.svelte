@@ -1,6 +1,7 @@
 <script lang="ts">
+    import MidWave from './components/MidWave.svelte';
   import Topwave from './components/Topwave.svelte';
-  import Cetifications from './lib/layout/Cetifications.svelte';
+  import Certifications from './lib/layout/Certifications.svelte';
   import Contact from './lib/layout/Contact.svelte';
   import Footer from './lib/layout/Footer.svelte';
   import Navbar from './lib/layout/Navbar.svelte';
@@ -20,13 +21,14 @@
   </header>
 
   <main>
+    <MidWave/>
     <Projects/>
-    <!-- <Skills/> -->
-    <!-- <Cetifications/> -->
-    <!-- <Contact/> -->
+    <Skills/>
+    <!-- <Certifications/> -->
+    <Contact/>
   </main>
 
-  <!-- <Footer/> -->
+  <Footer/>
   
 </div>
 

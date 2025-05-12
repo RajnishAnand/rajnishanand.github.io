@@ -48,12 +48,11 @@
             <a href={project.github} target="_blank" rel="noopener">GitHub ↗</a>
           {/if}
           {#if project.live}
-            <a href={project.live} target="_blank" rel="noopener">Live ↗</a>
+            <a href={project.live}>Live ↗</a>
           {/if}
         </div>
       </div>
     {/each}
-
   </div>
 </section>
 
@@ -61,33 +60,34 @@
 <style>
   #projects {
     padding: 2rem;
-    background-color: var(--bg-color);
     color: var(--text-primary);
-    max-width: min-max(100%, 900px);
     margin: 0 auto;
   }
   
   .section-title {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem
   }
   
   .project-list {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-self: flex-start;
     gap: 1.5rem;
+    overflow: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
   }
-
-  @media (min-width: 600px) {
-    .project-list {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
+  .project-list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
   }
   
   .project-card {
-    background-color: var(--code-bg);
+    background-color: #ffffff10;
     padding: 1.25rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: .5em;
+    min-width:250px;
   }
   
   .project-card h3 {
@@ -105,7 +105,7 @@
   
   .tag {
     display: inline-block;
-    background-color: var(--border-color);
+    background-color: var(--code-bg-transparency);
     padding: 0.2rem 0.6rem;
     font-size: 0.85rem;
     border-radius: 4px;
@@ -121,5 +121,4 @@
     font-size: 0.9rem;
     color: var(--accent-color);
   }
-  
 </style>

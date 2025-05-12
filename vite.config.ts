@@ -3,7 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/rajnishanand.github.io",
+  base: "/",
   // base: "./",
   plugins: [svelte()],
 })

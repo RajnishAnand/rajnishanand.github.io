@@ -1,11 +1,13 @@
 :root {
   --bg-color: #0d1117; /* Very dark background */
+  --bg-color2: #102f5c; /* Very dark background */
   --text-primary: #c9d1d9; /* Light gray for main text */
   --text-secondary: #8b949e; /* Dimmed text */
   --accent-color: #58a6ff; /* Soft blue (links, highlights) */
   --success-color: #2ea043; /* GitHub-like green */
   --border-color: #30363d; /* Subtle border */
   --code-bg: #161b22; /* For code blocks / cards */
+  --code-bg-transparency: #161b2270; /* For code blocks / cards */
 }
 
 body,
@@ -13,6 +15,7 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* outline: solid 1px #ffffff55 !important; */
 }
 
@@ -33,4 +36,18 @@ body {
     "wght" 400,
     "GRAD" 0,
     "opsz" 24;
+}
+
+main {
+  position: relative;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background-color: var(--bg-color2);
 }
