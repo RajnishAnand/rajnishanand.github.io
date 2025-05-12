@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
+  <style>
+    #svg1 {
+      <!-- box-shadow:inset 0 0 0 1.5px #555; -->
+      background: ;
+      stroke:  #8b949e;
+      stroke-width: 2px;
+      <!-- stroke-linejoin: round; -->
+      <!-- stroke-linecap: round; -->
+      fill: transparent;
+      transition: .5s stroke ease ;
+      stroke-dasharray: 36.5;
+      animation: anim1 5s linear infinite;
+    }
+
+    @keyframes anim1 {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 73; }
+    }
+  </style>
+  <path d="M15 0 L15 20 L20 12.5 L5 12.5 L10 5 L10 25"/>
+</svg> 
