@@ -48,11 +48,12 @@
             <a href={project.github} target="_blank" rel="noopener">GitHub ↗</a>
           {/if}
           {#if project.live}
-            <a href={project.live}>Live ↗</a>
+            <a href={project.live} target="_blank" rel="noopener">Live ↗</a>
           {/if}
         </div>
       </div>
     {/each}
+
   </div>
 </section>
 
@@ -60,34 +61,35 @@
 <style>
   #projects {
     padding: 2rem;
+    /* background-color: var(--bg-color); */
     color: var(--text-primary);
+    max-width: min-max(100%, 900px);
     margin: 0 auto;
   }
   
   .section-title {
     font-size: 1.8rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
   }
   
   .project-list {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    align-self: flex-start;
+    display: grid;
     gap: 1.5rem;
-    overflow: auto;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
   }
-  .project-list::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+  @media (min-width: 600px) {
+    .project-list {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
   }
   
   .project-card {
-    background-color: #ffffff10;
+    background-color: #00000060;
     padding: 1.25rem;
+    /* border: 1px solid white; */
     border-radius: .5em;
-    min-width:250px;
+    /* box-shadow: 0 0 25px 2px #00bfff30; */
+    /* backdrop-filter: blur(5px); */
   }
   
   .project-card h3 {
@@ -121,4 +123,5 @@
     font-size: 0.9rem;
     color: var(--accent-color);
   }
+  
 </style>
