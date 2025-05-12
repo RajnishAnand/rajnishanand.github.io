@@ -1,5 +1,5 @@
 <div class="midwave">
-  <img src="/src/assets/svgwave1.svg" alt="." />
+  <img src="/images/svgwave1.svg" alt="." />
 </div>
 
 
