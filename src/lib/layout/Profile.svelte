@@ -29,8 +29,8 @@
     width: 100%;
     max-width: 30em;
     padding:1em 2em;
-    background-color: var(--bg-color);
-    margin-top:6em;
+    background-color: #000000c0;
+    margin-top:10vh;
     font-size: .9em;
     border-top:solid 1.5px var(--text-primary);
     border-bottom:solid 1.5px var(--text-primary);
