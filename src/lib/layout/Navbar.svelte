@@ -1,10 +1,10 @@
 <script>
   let showMenu = false;
   function toggleMenu() {
-    // alert("working");
     showMenu = !showMenu;
   }
 </script>
+
 
 <nav class="navbar">
   <img src="/icon.svg" alt="icon" />
@@ -29,13 +29,13 @@
     font-family: 'JetBrains Mono', monospace;
     gap: 20px;
   }
-  
+ 
   .navbar-gap {
     border-top:solid 1.5px var(--text-secondary);
     flex-grow: 1;
     visibility: hidden;
   }
-  
+ 
   .menu{
     display: none;
     z-index: 2;
@@ -47,7 +47,7 @@
     flex-direction: column;
     background-color: var(--bg-color);
     border: solid 1px var(--border-color);
-    padding: 20px 25px;
+    padding: 50px 25px;
   }
 
   .menu-visible{ 
@@ -73,7 +73,7 @@
     /* z-index: 3; */
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 350px) {
     .menu {
       display: flex;
       position: initial;
