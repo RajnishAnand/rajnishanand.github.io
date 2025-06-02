@@ -90,7 +90,6 @@
     /* border: 1px solid white; */
     border-radius: .5em;
     box-shadow: 0 0 20px 0px #58a6ff50;
-    backdrop-filter: blur(20px);
   }
   
   .project-card h3 {
