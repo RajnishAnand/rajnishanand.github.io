@@ -61,8 +61,8 @@
 <style>
   .skills-container {
     width: 100%;
-    background-color: var(--code-bg-transparency);
-    /* background-color: var(--code-bg); */
+    background-color:var(--bg-color);
+    color: black;
     padding: 10px 0;
     overflow-x: hidden;
     margin: 10px 0;

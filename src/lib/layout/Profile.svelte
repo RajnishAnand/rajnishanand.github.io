@@ -47,6 +47,7 @@
     position: absolute;
     height: 100%;
     z-index: -1;
+    filter:contrast(200%);
   }
   .profile-image img {
     height: 100%;
