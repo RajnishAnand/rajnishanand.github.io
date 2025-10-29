@@ -140,6 +140,7 @@
   button {
     padding: 0.75rem;
     background-color: #4f46e5;
+    background-color: var(--bg-color);
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -150,7 +151,8 @@
   }
 
   button:hover {
-    background-color: #3730a3;
+    background-color: var(--bg-color2);
+    color: var(--bg-color);
   }
 
   .success-msg {

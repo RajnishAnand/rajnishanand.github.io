@@ -7,7 +7,7 @@
 
 
 <nav class="navbar">
-  <img src="/icon.svg" alt="icon" />
+  <img class="icon" src="/icon.svg" alt="icon" />
   <span class="navbar-gap"></span>
   <button class="navbar-menu-icon material-symbols-outlined" on:click={toggleMenu}> segment </button>
   <div class="menu" class:menu-visible={showMenu} >
@@ -31,7 +31,7 @@
   }
  
   .navbar-gap {
-    border-top:solid 1.5px var(--text-secondary);
+    /* border-top:solid 1.5px var(--text-secondary); */
     flex-grow: 1;
     visibility: hidden;
   }

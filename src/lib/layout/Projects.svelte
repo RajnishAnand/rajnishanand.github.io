@@ -95,7 +95,7 @@
   .project-card h3 {
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #1f3a60;
+    color: var(--bg-color);
   }
   
   .tags {
