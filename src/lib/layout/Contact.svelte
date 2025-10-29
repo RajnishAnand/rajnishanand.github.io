@@ -89,7 +89,7 @@
     background: white;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 20px 0px #58a6ff50;
   }
 
   .contact-info {
@@ -140,6 +140,7 @@
   button {
     padding: 0.75rem;
     background-color: #4f46e5;
+    background-color: var(--bg-color);
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -150,7 +151,8 @@
   }
 
   button:hover {
-    background-color: #3730a3;
+    background-color: var(--bg-color2);
+    color: var(--bg-color);
   }
 
   .success-msg {
