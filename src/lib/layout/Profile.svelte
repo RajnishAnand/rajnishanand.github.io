@@ -39,8 +39,7 @@
     overflow: hidden;
     background: #222d3d80;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px 0px #00000050;
-    transition: 1s ease;
+    box-shadow: 0 0 15px 0px #111111;
   }
 
   .profile-image img{
@@ -73,7 +72,7 @@
   }
   @media(min-width: 700px){
     .profile{
-      margin: auto;
+      margin: 5em auto;
     }
   }
 

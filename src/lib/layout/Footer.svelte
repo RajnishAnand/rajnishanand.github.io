@@ -25,7 +25,7 @@
   .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1em ;
+    padding: 0 2em ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,10 +47,6 @@
   .social-icon{
     text-decoration: none;
     color: white;
-  }
-
-  .social-icon:hover i {
-    transform: scale(1.1);
   }
 
   @media (max-width: 768px) {

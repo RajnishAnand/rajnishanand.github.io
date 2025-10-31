@@ -75,7 +75,7 @@
 <style>
   .contact-section {
     background: var(--text-primary);
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
     display: flex;
     justify-content: center;
   }
