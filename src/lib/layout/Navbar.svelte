@@ -23,11 +23,11 @@
   .navbar {
     display: flex;
     color: var(--text-primary);
-    padding: 15px;
     justify-content: space-between;
     align-items: center;
     font-family: 'JetBrains Mono', monospace;
     gap: 20px;
+    padding:min(4vw, 2em);
   }
  
   .navbar-gap {
@@ -97,4 +97,5 @@
   .navbar a:hover {
     color: var(--text-primary);
   }
+
 </style>

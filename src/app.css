@@ -29,6 +29,21 @@ body {
   overflow-x: hidden;
 }
 
+.container{
+  min-width: 300px;
+  max-width: 1400px;
+  }
+@media(min-width: 1400px){
+  .container{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 16px #202020, inset 0 0 10px 0 #00000055;
+    margin: 5em auto;
+    border-radius: 1em;
+  }
+}
+
 .material-symbols-outlined {
   user-select: none;
   color: var(--text-secondary);

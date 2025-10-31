@@ -1,128 +1,82 @@
 <script>
   // const base = import.meta.env.BASE_URL;
+  const profile = {
+    name: "Rajnish Anand",
+    subtext: "Web Systems Developer",
+    description:
+      "A curious individual with multiple years of experience in full-stack web development, currently exploring the fields of machine learning and cybersecurity."
+  };
+
 </script>
 
 
+<div class="profile">
+  <div class="profile-image">
+    <img src="/images/specs.jpeg" alt="Rajnish Anand - Web Systems Developer"/>
+  </div>
+  
+  <div class="profile-text">
+    <h1>{profile.name}</h1>
+    <h2>{profile.subtext}</h2>
+    <p>{profile.description}</p>
+  </div>
+
+</div>
+
 <style>
-  .profile {
-    user-select: none;
-    pointer-events: none;
-    margin-top: 2em;
-    position: relative;
-    height: 85vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .profile *{
+    /* outline: solid 1px #00ff0055; */
+    outline-offset: 5px;
+   }
+  .profile{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 2em;
+    font-size: .8em;
+    /* outline: solid 1px red; */
+    max-width: 50em;
+    border-radius: 1em;
     overflow: hidden;
+    background: #222d3d80;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 0px #00000050;
+    transition: 1s ease;
   }
 
-  .profile-text {
-    position: relative;
-    background: var(--bg-color);
+  .profile-image img{
+    height: 100%;
     width: 100%;
-    max-width: 30em;
-    padding:0em 2em;
-    margin-top:10vh;
-    font-size: .9em;
-    filter: blur(.3px);
-    box-shadow: inset 0 0 0 9px black, inset 0 0 .2px 10px white;
-    overflow: hidden;
   }
-  .profile-text h1{
-    /* font-weight: 100; */
-    text-transform: uppercase;
-    margin-top: .5em;
+
+  .profile-text{
+    position: relative;
+    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
-  .profile-text h2 {
-    color: var(--accent-color);
-    font-weight: 100;
+
+  .profile-text h2{
+    color: var(--text-secondary);
   }
-  .profile-text p {
+  .profile-text p{
     color: var(--text-secondary);
   }
 
-  .profile-image{
-    height: 100%;
-    z-index: -1;
-    filter:opacity(.85) blur(.3px);
-  }
-  .profile-image img {
-    height: 100%;
-    /* max-width:100%; */
-    position: relative;
-  }
-
-  @keyframes boxopen {
-    0%{ height: 0; }
-    30%{
-      height: 0;
-      box-shadow: inset 0 0 0 9px black, inset 0 0 0 10px white;
+  @media (min-width: 600px){
+    .profile{
+      height: 20em;
+      grid-template-rows: auto;
+      grid-template-columns: auto auto;
+      align-self: center;
     }
   }
-  @keyframes boxopen2 {
-    0%{width: calc(100% + 4em) ;}
-    100%{width: 0;}
-  }
-
-  @media (max-width: 600px){
-    .profile-text{
-      position: absolute;
-      height: 12.5em;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: ease;
-      animation: boxopen 1s 1;
-    }
-  }
-  @media (max-width: 1200px) and (min-width: 601px){
-    .profile-image{
-      position: relative;
-      left: 4em;
-    }
-    .profile-text{ 
-      font-size: initial;
-      box-shadow: inset 0 0 0 1px white;
-      padding:0 2em 2em 2em;
-      left: -4em;
-    }
-    .profile-text::before{
-      content: "";
-      background: black;
-      display: block;
-      position: absolute;
-      right: -4em;
-      height: 100%;
-      z-index: 3;
-      transition: ease-in-out;
-      animation: boxopen2 3s 1;
-      box-shadow: -1px 0 10px white;
-    }
-  }
-  @media (min-width: 1200px){
-    .profile-text{
-      font-size: 1.2em;
-      padding:0 2em 2em 2em;
+  @media(min-width: 700px){
+    .profile{
+      margin: auto;
     }
   }
 
 </style>
 
 
-<div class="profile">
-  <div class="profile-image">
-    <img
-      src="/images/mr44.png" 
-      alt="Rajnish Anand - Web Systems Developer"
-    />
-  </div>
-  
-  <div class="profile-text">
-    <h1>Rajnish Anand </h1>
-    <h2 class="edu-qld-beginner-h2">a web systems developer</h2>
-    <p>
-      A Fullstack Web Developer, ongoing exploration in fields of Machine learning and Cybersecurity.
-    </p>
-  </div>
-
-</div>
