@@ -1,6 +1,12 @@
 <script>
   const projects = [
     {
+      title: "Sign Detection",
+      description: "KNN model for Sign Language Detection",
+      stack: ['Python', 'OpenCV', 'Scikit-learn'],
+      github: "https://github.com/rajnishanand/sign-detection",
+    },
+    {
       title: 'Glitchi',
       description: 'An Open Source Discord Bot featuring developer tools and utility.',
       stack: ['TypeScript'],
@@ -19,13 +25,15 @@
       stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
       // github: 'https://github.com/rajnishanand/quick-chat',
     },
-    {
-      title: 'Archive: MiniProjects',
-      description: 'A collection of old-mini web based projects, designed for mobiles.',
-      stack: ['HTML/CSS', 'JS'],
-      // github: ''
-      live: "https://rajnishanand.github.io/miniprojects/",
-    }
+
+    // {
+    //   title: 'Archive: MiniProjects',
+    //   description: 'A collection of old-mini web based projects, designed for mobiles.',
+    //   stack: ['HTML/CSS', 'JS'],
+    //   // github: ''
+    //   live: "https://rajnishanand.github.io/miniprojects/",
+    // }
+
   ];
 </script>
 
