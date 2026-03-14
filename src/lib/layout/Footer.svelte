@@ -9,7 +9,7 @@
         <i class="devicon-linkedin-plain"></i>
       </a>
     </div>
-    <p>&copy;2025 Rajnish Anand. All rights reserved.</p>
+    <p>&copy;2026 Rajnish Anand</p>
   </div>
 </footer>
 

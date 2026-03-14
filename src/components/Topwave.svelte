@@ -1,6 +1,7 @@
 
 <style>
   #svg-topwave{
+    background-color: var(--bg-color);
     position: absolute;
     width: 100%;
     transform: rotateY(180deg);

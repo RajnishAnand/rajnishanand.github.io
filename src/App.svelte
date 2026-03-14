@@ -1,5 +1,5 @@
 <script lang="ts">
-    import MidWave from './components/MidWave.svelte';
+  import MidWave from './components/MidWave.svelte';
   import Topwave from './components/Topwave.svelte';
   import Certifications from './lib/layout/Certifications.svelte';
   import Contact from './lib/layout/Contact.svelte';
