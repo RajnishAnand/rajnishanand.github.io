@@ -25,6 +25,8 @@ body {
   background-color: var(--bg-color);
   background-image: url("/images/circuitboard.svg");
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text-primary);
   line-height: 1.6;
   position: relative;
