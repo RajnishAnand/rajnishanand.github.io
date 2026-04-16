@@ -1,6 +1,12 @@
 <script>
   const projects = [
     {
+      title: "DNS Recon",
+      description: "DNS reconnaissance & subdomain takeover scanner",
+      stack: ['Python'],
+      github: "https://github.com/rajnishanand/dns-recon",
+    },
+    {
       title: "Sign Detection",
       description: "KNN model for Sign Language Detection",
       stack: ['Python', 'OpenCV', 'Scikit-learn'],
@@ -14,18 +20,19 @@
     },
     {
       title: 'Mobile Paint Webapp',
-      description: 'A paint web app for mobile devices.',
+      description: 'Paint web app for mobile devices.',
       stack: ['HTML/CSS', 'JS', 'JQuery'],
       github: 'https://github.com/rajnishanand/paint',
       live: 'https://rajnishanand.github.io/paint/',
     },
-    {
-      title: 'Quick Chat',
-      description: 'Scocial Chatting web based platform.\n(under-development)',
-      stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
-      // github: 'https://github.com/rajnishanand/quick-chat',
-    },
 
+    // {
+    //   title: 'Quick Chat',
+    //   description: 'Scocial Chatting web based platform.\n(under-development)',
+    //   stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
+    //   // github: 'https://github.com/rajnishanand/quick-chat',
+    // },
+    //
     // {
     //   title: 'Archive: MiniProjects',
     //   description: 'A collection of old-mini web based projects, designed for mobiles.',
