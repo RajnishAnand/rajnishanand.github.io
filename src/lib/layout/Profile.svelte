@@ -1,3 +1,4 @@
+
 <script>
   // const base = import.meta.env.BASE_URL;
   const profile = {
@@ -39,13 +40,12 @@
     overflow: hidden;
     background: #222d3d80;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px 0px #00000050;
-    transition: 1s ease;
+    box-shadow: 0 0 15px 0px #111111;
   }
-
   .profile-image img{
     height: 100%;
     width: 100%;
+    aspect-ratio: 1/1;
   }
 
   .profile-text{
@@ -66,14 +66,13 @@
   @media (min-width: 600px){
     .profile{
       height: 20em;
-      grid-template-rows: auto;
       grid-template-columns: auto auto;
       align-self: center;
     }
   }
   @media(min-width: 700px){
     .profile{
-      margin: auto;
+      margin: 5em auto;
     }
   }
 

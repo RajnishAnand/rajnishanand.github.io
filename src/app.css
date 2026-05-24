@@ -22,7 +22,12 @@ body * {
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color2);
+  background-image:  radial-gradient(#5e5e5e 0.75px, transparent 0.75px), radial-gradient(#5e5e5e 0.75px, #000000 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0,15px 15px;
+  background-attachment: fixed;
+
   color: var(--text-primary);
   line-height: 1.6;
   position: relative;
@@ -30,15 +35,16 @@ body {
 }
 
 .container{
+  position: relative;
   min-width: 300px;
-  max-width: 1400px;
-  }
-@media(min-width: 1400px){
+  max-width: 1480px;
+  transition: 1s ease;
+}
+@media(min-width: 1480px){
   .container{
-    margin: 0 auto;
-    position: relative;
     overflow: hidden;
     box-shadow: 0 0 0 16px #202020, inset 0 0 10px 0 #00000055;
+    max-width: calc(1480px - 30em);
     margin: 5em auto;
     border-radius: 1em;
   }

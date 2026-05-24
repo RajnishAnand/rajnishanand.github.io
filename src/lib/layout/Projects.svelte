@@ -1,6 +1,18 @@
 <script>
   const projects = [
     {
+      title: "DNS Recon",
+      description: "DNS reconnaissance & subdomain takeover scanner",
+      stack: ['Python'],
+      github: "https://github.com/rajnishanand/dns-recon",
+    },
+    {
+      title: "Sign Detection",
+      description: "KNN model for Sign Language Detection",
+      stack: ['Python', 'OpenCV', 'Scikit-learn'],
+      github: "https://github.com/rajnishanand/sign-detection",
+    },
+    {
       title: 'Glitchi',
       description: 'An Open Source Discord Bot featuring developer tools and utility.',
       stack: ['TypeScript'],
@@ -8,24 +20,27 @@
     },
     {
       title: 'Mobile Paint Webapp',
-      description: 'A paint web app for mobile devices.',
+      description: 'Paint web app for mobile devices.',
       stack: ['HTML/CSS', 'JS', 'JQuery'],
       github: 'https://github.com/rajnishanand/paint',
       live: 'https://rajnishanand.github.io/paint/',
     },
-    {
-      title: 'Quick Chat',
-      description: 'Scocial Chatting web based platform.\n(under-development)',
-      stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
-      // github: 'https://github.com/rajnishanand/quick-chat',
-    },
-    {
-      title: 'Archive: MiniProjects',
-      description: 'A collection of old-mini web based projects, designed for mobiles.',
-      stack: ['HTML/CSS', 'JS'],
-      // github: ''
-      live: "https://rajnishanand.github.io/miniprojects/",
-    }
+
+    // {
+    //   title: 'Quick Chat',
+    //   description: 'Scocial Chatting web based platform.\n(under-development)',
+    //   stack: ['HTML/CSS', 'JS', 'NodeJs', 'Socket.io', 'Express'],
+    //   // github: 'https://github.com/rajnishanand/quick-chat',
+    // },
+    //
+    // {
+    //   title: 'Archive: MiniProjects',
+    //   description: 'A collection of old-mini web based projects, designed for mobiles.',
+    //   stack: ['HTML/CSS', 'JS'],
+    //   // github: ''
+    //   live: "https://rajnishanand.github.io/miniprojects/",
+    // }
+
   ];
 </script>
 
@@ -63,8 +78,9 @@
     padding: 2rem;
     /* background-color: var(--bg-color); */
     color: #48525f;
-    max-width: min-max(100%, 900px);
+    /* max-width: min-max(100%, 900px); */
     margin: 0 auto;
+    max-width: 1020px;
   }
   
   .section-title {
@@ -80,7 +96,7 @@
 
   @media (min-width: 600px) {
     .project-list {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
   }
   
