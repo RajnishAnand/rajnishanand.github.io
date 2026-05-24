@@ -22,11 +22,12 @@ body * {
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background-color: var(--bg-color);
-  /* background-image: url("/images/circuitboard.svg"); */
+  background-color: var(--bg-color2);
+  background-image:  radial-gradient(#5e5e5e 0.75px, transparent 0.75px), radial-gradient(#5e5e5e 0.75px, #000000 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0,15px 15px;
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+
   color: var(--text-primary);
   line-height: 1.6;
   position: relative;

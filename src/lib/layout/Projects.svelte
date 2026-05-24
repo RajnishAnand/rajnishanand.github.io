@@ -78,8 +78,9 @@
     padding: 2rem;
     /* background-color: var(--bg-color); */
     color: #48525f;
-    max-width: min-max(100%, 900px);
+    /* max-width: min-max(100%, 900px); */
     margin: 0 auto;
+    max-width: 1020px;
   }
   
   .section-title {
@@ -95,7 +96,7 @@
 
   @media (min-width: 600px) {
     .project-list {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
   }
   
