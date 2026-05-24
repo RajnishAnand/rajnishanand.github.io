@@ -23,7 +23,7 @@ body * {
 body {
   font-family: "JetBrains Mono", monospace;
   background-color: var(--bg-color);
-  background-image: url("/images/circuitboard.svg");
+  /* background-image: url("/images/circuitboard.svg"); */
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
