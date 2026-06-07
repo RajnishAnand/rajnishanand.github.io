@@ -5,6 +5,7 @@
       description: "DNS reconnaissance & subdomain takeover scanner",
       stack: ['Python'],
       github: "https://github.com/rajnishanand/dns-recon",
+      website: "https://rajnishanand.github.io/dns-recon",
     },
     {
       title: "Sign Detection",
@@ -23,7 +24,7 @@
       description: 'Paint web app for mobile devices.',
       stack: ['HTML/CSS', 'JS', 'JQuery'],
       github: 'https://github.com/rajnishanand/paint',
-      live: 'https://rajnishanand.github.io/paint/',
+      website: 'https://rajnishanand.github.io/paint/',
     },
 
     // {
@@ -38,7 +39,7 @@
     //   description: 'A collection of old-mini web based projects, designed for mobiles.',
     //   stack: ['HTML/CSS', 'JS'],
     //   // github: ''
-    //   live: "https://rajnishanand.github.io/miniprojects/",
+    //   website: "https://rajnishanand.github.io/miniprojects/",
     // }
 
   ];
@@ -62,8 +63,8 @@
           {#if project.github}
             <a href={project.github} target="_blank" rel="noopener">GitHub ↗</a>
           {/if}
-          {#if project.live}
-            <a href={project.live} target="_blank" rel="noopener">Live ↗</a>
+          {#if project.website}
+            <a href={project.website} target="_blank" rel="noopener">website ↗</a>
           {/if}
         </div>
       </div>
